@@ -1,5 +1,5 @@
 server.out: http.o main.o util.o
-	gcc -o server.out http.o main.o util.o
+	gcc -o server.out http.o main.o util.o -lpthread
 
 http.o: http.c http.h
 	gcc -c http.c
